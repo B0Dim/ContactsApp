@@ -22,7 +22,6 @@ class ContactInfoViewController: UIViewController {
     }
     
     func setValuesForm() {
-        print(person.email)
         title = person.fullName
         labelEmail.text = person.email
         labelPhone.text = person.phone
