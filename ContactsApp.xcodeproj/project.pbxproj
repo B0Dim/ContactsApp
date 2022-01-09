@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		082B9800278AE7680046591F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B97FF278AE7680046591F /* AppDelegate.swift */; };
 		082B9802278AE7680046591F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B9801278AE7680046591F /* SceneDelegate.swift */; };
-		082B9804278AE7680046591F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B9803278AE7680046591F /* ViewController.swift */; };
 		082B9807278AE7680046591F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082B9805278AE7680046591F /* Main.storyboard */; };
 		082B9809278AE7690046591F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082B9808278AE7690046591F /* Assets.xcassets */; };
 		082B980C278AE7690046591F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082B980A278AE7690046591F /* LaunchScreen.storyboard */; };
+		082B9819278AED080046591F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B9818278AED080046591F /* Person.swift */; };
+		082B981B278AED160046591F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B981A278AED160046591F /* DataManager.swift */; };
+		082B981D278AF2D10046591F /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B981C278AF2D10046591F /* ContactsViewController.swift */; };
+		082B981F278AF2E40046591F /* ContactsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B981E278AF2E40046591F /* ContactsDetailViewController.swift */; };
+		082B9821278AF4D00046591F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B9820278AF4D00046591F /* TabBarViewController.swift */; };
+		082B9823278AF7630046591F /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B9822278AF7630046591F /* ContactInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		082B97FC278AE7680046591F /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		082B97FF278AE7680046591F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		082B9801278AE7680046591F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		082B9803278AE7680046591F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		082B9806278AE7680046591F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		082B9808278AE7690046591F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		082B980B278AE7690046591F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		082B980D278AE7690046591F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082B9818278AED080046591F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		082B981A278AED160046591F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		082B981C278AF2D10046591F /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		082B981E278AF2E40046591F /* ContactsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailViewController.swift; sourceTree = "<group>"; };
+		082B9820278AF4D00046591F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		082B9822278AF7630046591F /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,10 @@
 		082B9814278AE7900046591F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				082B9803278AE7680046591F /* ViewController.swift */,
+				082B981C278AF2D10046591F /* ContactsViewController.swift */,
+				082B981E278AF2E40046591F /* ContactsDetailViewController.swift */,
+				082B9820278AF4D00046591F /* TabBarViewController.swift */,
+				082B9822278AF7630046591F /* ContactInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -94,6 +107,8 @@
 		082B9816278AE7A50046591F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				082B9818278AED080046591F /* Person.swift */,
+				082B981A278AED160046591F /* DataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,9 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082B9804278AE7680046591F /* ViewController.swift in Sources */,
+				082B981B278AED160046591F /* DataManager.swift in Sources */,
+				082B9823278AF7630046591F /* ContactInfoViewController.swift in Sources */,
 				082B9800278AE7680046591F /* AppDelegate.swift in Sources */,
+				082B981F278AF2E40046591F /* ContactsDetailViewController.swift in Sources */,
+				082B9819278AED080046591F /* Person.swift in Sources */,
+				082B9821278AF4D00046591F /* TabBarViewController.swift in Sources */,
 				082B9802278AE7680046591F /* SceneDelegate.swift in Sources */,
+				082B981D278AF2D10046591F /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
