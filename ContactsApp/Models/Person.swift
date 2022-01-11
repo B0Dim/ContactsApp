@@ -17,12 +17,11 @@ struct Person {
     
     static func getContacts() -> [Person] {
         var persons: [Person] = []
-        let dataManager = DataManager()
         
-        let names = dataManager.names
-        let surnames = dataManager.surnames
-        let phones = dataManager.phones
-        let emails = dataManager.emails
+        let names = DataManager.shared.names.shuffled()
+        let surnames = DataManager.shared.surnames.shuffled()
+        let phones = DataManager.shared.phones.shuffled()
+        let emails = DataManager.shared.emails.shuffled()
         
         let numValues = min(names.count, surnames.count,
                       phones.count, emails.count)
